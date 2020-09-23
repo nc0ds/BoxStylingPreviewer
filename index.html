@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tool to help you stylize your box with CSS">
+        <meta name="keywords" content="Box,Styling,Previewer,CSS,box,stylize,preview">
+        <title>Box Styling Previewer</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app">
+            <div class="box">
+                <div class="settingsBox">
+                    <h1>Border Radius</h1>
+                    <div class="slideContainer">
+                        <input type="range" min="0" max="50" value="0" class="slider" id="sliderBorderRadius">
+                        <p class="resultadoBorderRadius"></p>
+                    </div>
+                    <h1>Box Shadow</h1>
+                    <div class="slideContainer">
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="sliderBoxShadowX">
+                        <p class="resultadoBoxShadowX"></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="sliderBoxShadowY">
+                        <p class="resultadoBoxShadowY"></p>
+                        <input type="range" min="0" max="50" value="0" class="slider" id="sliderBoxShadowBlur">
+                        <p class="resultadoBoxShadowBlur"></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="sliderBoxShadowSpread">
+                        <p class="resultadoBoxShadowSpread"></p>
+                    </div>
+                    <h1>Border</h1>
+                    <div class="sliderContainer">
+                        <input type="range" min="0" max="50" value="0" class="slider" id="sliderBorder">
+                        <p class="resultadoBorder"></p>
+                        <div class="borderTypes">
+                            <div><input type="radio" name="borderType" value="solid" id="borderSolid" checked><label for="borderSolid">Solid</label></div>
+                            <div><input type="radio" name="borderType" value="dashed" id="borderDashed"><label for="borderDashed">Dashed</label></div>
+                            <div><input type="radio" name="borderType" value="dotted" id="borderDotted"><label for="borderDotted">Dotted</label></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="previewBox">
+                    <div class="preview"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
